@@ -8,7 +8,11 @@ import { Cocktail } from '../shared/cocktail.model';
 })
 export class CocktailsListComponent implements OnInit {
 
-  cocktails: Cocktail[] = [];
+  public cocktails: Cocktail[] = [
+    new Cocktail('Mojito'),
+    new Cocktail('Margarita'),
+    new Cocktail('Sour')
+  ];
 
   constructor() { }
 
