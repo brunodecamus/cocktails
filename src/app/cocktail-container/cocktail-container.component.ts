@@ -22,4 +22,9 @@ export class CocktailContainerComponent implements OnInit {
     this.cocktail = this.cocktails[1];
   }
 
+  pickCocktail(index: number): void {
+    console.log("index:" + index);
+    this.cocktail = this.cocktails[index];
+  }
+
 }
