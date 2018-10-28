@@ -10,6 +10,7 @@ import { CocktailContainerComponent } from './cocktail-container/cocktail-contai
 import { ActiveDirective } from './shared/directives/active.directive';
 import { PanierComponent } from './panier/panier/panier.component';
 import { IngredientListComponent } from './panier/ingredient-list/ingredient-list.component';
+import { AppRouting } from './app.module-routing';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { IngredientListComponent } from './panier/ingredient-list/ingredient-lis
     IngredientListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
