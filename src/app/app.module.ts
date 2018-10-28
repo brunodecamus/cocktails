@@ -11,6 +11,7 @@ import { ActiveDirective } from './shared/directives/active.directive';
 import { PanierComponent } from './panier/panier/panier.component';
 import { IngredientListComponent } from './panier/ingredient-list/ingredient-list.component';
 import { AppRouting } from './app.module-routing';
+import { PanierService } from './shared/services/panier.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { AppRouting } from './app.module-routing';
     BrowserModule,
     AppRouting
   ],
-  providers: [],
+  providers: [PanierService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

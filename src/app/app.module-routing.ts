@@ -5,8 +5,8 @@ import { CocktailContainerComponent } from './cocktail-container/cocktail-contai
 
 const APP_ROUTES: Routes = [
     { path: '', redirectTo: 'cocktails', pathMatch: 'full' },
-    { path: 'panier', component: PanierComponent },
-    { path: 'cocktails', component: CocktailContainerComponent }
+    { path: 'cocktails', component: CocktailContainerComponent },
+    { path: 'panier', component: PanierComponent }
 ];
 
 export const AppRouting = RouterModule.forRoot(APP_ROUTES);
