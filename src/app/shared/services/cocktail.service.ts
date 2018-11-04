@@ -45,9 +45,34 @@ export class CocktailService {
   }
 
   addCocktail(cocktail: Cocktail) {
-    const cocktails = this.cocktails.value;
-    cocktails.push({ name: cocktail.name, img: cocktail.img, desc: cocktail.desc, ingredients: cocktail.ingredients })
+    console.log("Ajoute un cocktail : ");
+    console.log(cocktail);
+    let cocktails = this.cocktails.value;
+    let updateElement: boolean;
+    updateElement = false;
+
+    cocktails.map(x => {
+      if (x.name === cocktail.name) {
+        console.log("Update:" + x.name);
+        x = x;
+        x.img = cocktail.img;
+        x.desc = cocktail.desc;
+        // pour les ingredients a voir un jour
+        updateElement = true;
+      } else {
+        console.log("New:" + x.name);
+        x = x;
+      }
+    });
+
+    if (!updateElement) {
+      cocktails.push({ name: cocktail.name, img: cocktail.img, desc: cocktail.desc, ingredients: cocktail.ingredients });
+    }
+
     this.cocktails.next(cocktails);
+
+    console.log("Tous le cocktail pour debug");
+    console.log(this.cocktails);
   }
 
 }
