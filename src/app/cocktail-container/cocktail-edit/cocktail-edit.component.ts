@@ -20,7 +20,10 @@ export class CocktailEditComponent implements OnInit {
 
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
       if (params.get('index')) {
-        this.cocktail = this.cocktailService.getCocktail(Number(params.get('index')));
+        //this.cocktail = this.cocktailService.getCocktail(Number(params.get('index')));
+        this.cocktailService.getCocktail(Number(params.get('index'))).subscribe(cocktail => {
+          this.cocktail = cocktail;
+        });
         this.initForm(this.cocktail);
       } else {
         this.initForm();
