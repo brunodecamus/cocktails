@@ -15,6 +15,7 @@ import { CocktailEditComponent } from './cocktail-container/cocktail-edit/cockta
 import { AppRouting } from './app.module-routing';
 import { PanierService } from './shared/services/panier.service';
 import { ActiveDirective } from './shared/directives/active.directive';
+import { GraphsComponent } from './graphs/graphs.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ActiveDirective } from './shared/directives/active.directive';
     CocktailEditComponent,
     PanierComponent,
     IngredientListComponent,
-    ActiveDirective
+    ActiveDirective,
+    GraphsComponent
   ],
   imports: [
     AppRouting,

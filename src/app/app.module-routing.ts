@@ -4,6 +4,7 @@ import { PanierComponent } from './panier/panier/panier.component';
 import { CocktailContainerComponent } from './cocktail-container/cocktail-container.component';
 import { CocktailDetailsComponent } from './cocktail-container/cocktail-details/cocktail-details.component';
 import { CocktailEditComponent } from './cocktail-container/cocktail-edit/cocktail-edit.component';
+import { GraphsComponent } from './graphs/graphs.component';
 
 
 const APP_ROUTES: Routes = [
@@ -14,7 +15,8 @@ const APP_ROUTES: Routes = [
         {path:':index', component: CocktailDetailsComponent},
         {path:':index/edit', component: CocktailEditComponent}
     ] },
-    { path: 'panier', component: PanierComponent }
+    { path: 'panier', component: PanierComponent },
+    { path: 'graph', component: GraphsComponent }
 ];
 
 export const AppRouting = RouterModule.forRoot(APP_ROUTES);
