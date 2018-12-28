@@ -15,7 +15,9 @@ import { CocktailEditComponent } from './cocktail-container/cocktail-edit/cockta
 import { AppRouting } from './app.module-routing';
 import { PanierService } from './shared/services/panier.service';
 import { ActiveDirective } from './shared/directives/active.directive';
-import { GraphsComponent } from './graphs/graphs.component';
+import { Sample1Component } from './graphs/sample1/sample1.component';
+import { Sample2Component } from './graphs/sample2/sample2.component';
+import { Sample3Component } from './graphs/sample3/sample3.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { GraphsComponent } from './graphs/graphs.component';
     PanierComponent,
     IngredientListComponent,
     ActiveDirective,
-    GraphsComponent
+    Sample1Component,
+    Sample2Component,
+    Sample3Component
   ],
   imports: [
     AppRouting,

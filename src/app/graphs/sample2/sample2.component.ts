@@ -1,24 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import * as Chart from 'chart.js';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { Chart } from 'chart.js';
 
 @Component({
-  selector: 'app-graphs',
-  templateUrl: './graphs.component.html',
-  styleUrls: ['./graphs.component.css']
+  selector: 'app-sample2',
+  templateUrl: './sample2.component.html',
+  styleUrls: ['./sample2.component.css']
 })
-export class GraphsComponent implements OnInit {
+export class Sample2Component implements OnInit {
 
-  canvas: any;
-  ctx: any;
+  myChart: Chart;
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
 
-
-    this.canvas = document.getElementById('myChart');
-    this.ctx = this.canvas.getContext('2d');
-    let myChart = new Chart(this.ctx, {
+    let htmlRef = this.elementRef.nativeElement.querySelector(`#yourCavasId`);
+    this.myChart = new Chart(htmlRef, {
       type: 'pie',
       data: {
         labels: ["New", "In Progress", "On Hold"],
