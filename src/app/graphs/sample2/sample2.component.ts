@@ -16,15 +16,15 @@ export class Sample2Component implements OnInit {
 
     let htmlRef = this.elementRef.nativeElement.querySelector(`#yourCavasId`);
     this.myChart = new Chart(htmlRef, {
-      type: 'pie',
+      type: 'line',
       data: {
-        labels: ["New", "In Progress", "On Hold"],
+        labels: ["New", "In Progress", "On Hold", "?"],
         datasets: [{
           label: '# of Votes',
-          data: [1, 2, 3],
+          data: [1, 2.23, 3.25],
           backgroundColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
+            'rgba(0, 99, 132, 1)',
+            'rgba(54, 0, 235, 1)',
             'rgba(255, 206, 86, 1)'
           ],
           borderWidth: 1
