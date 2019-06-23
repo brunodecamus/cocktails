@@ -19,6 +19,8 @@ import { PanierComponent } from './panier/panier/panier.component';
 import { ActiveDirective } from './shared/directives/active.directive';
 import { PanierService } from './shared/services/panier.service';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { Cb1Component } from './my-checkbox/cb1/cb1.component';
+import { Cb2Component } from './my-checkbox/cb2/cb2.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
     Sample1Component,
     Sample2Component,
     Sample3Component,
-    MyCheckboxComponent
+    MyCheckboxComponent,
+    Cb1Component,
+    Cb2Component
   ],
   imports: [
     AppRouting,
