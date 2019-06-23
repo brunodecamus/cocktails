@@ -8,6 +8,7 @@ import { CocktailEditComponent } from './cocktail-container/cocktail-edit/cockta
 import { Sample1Component } from './graphs/sample1/sample1.component';
 import { Sample2Component } from './graphs/sample2/sample2.component';
 import { Sample3Component } from './graphs/sample3/sample3.component';
+import { MyCheckboxComponent } from './my-checkbox/my-checkbox.component';
 
 const APP_ROUTES: Routes = [
     { path: '', redirectTo: 'cocktails', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const APP_ROUTES: Routes = [
     { path: 'graph1', component: Sample1Component },
     { path: 'graph2', component: Sample2Component },
     { path: 'graph3', component: Sample3Component },
+    { path: 'checkbox', component: MyCheckboxComponent },
 ];
 
 export const AppRouting = RouterModule.forRoot(APP_ROUTES);

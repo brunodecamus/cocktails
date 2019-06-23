@@ -18,6 +18,7 @@ import { ActiveDirective } from './shared/directives/active.directive';
 import { Sample1Component } from './graphs/sample1/sample1.component';
 import { Sample2Component } from './graphs/sample2/sample2.component';
 import { Sample3Component } from './graphs/sample3/sample3.component';
+import { MyCheckboxComponent } from './my-checkbox/my-checkbox.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { Sample3Component } from './graphs/sample3/sample3.component';
     ActiveDirective,
     Sample1Component,
     Sample2Component,
-    Sample3Component
+    Sample3Component,
+    MyCheckboxComponent
   ],
   imports: [
     AppRouting,
